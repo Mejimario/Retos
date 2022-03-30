@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Buttons</title>
+</head>
+<style>
+    .btn{
+        font-size: 16px;
+        border-radius: 8px;
+        padding: 8px 14px;
+    }
+    .default {
+        background-color: #e0e0e0;
+        color: black;
+        box-shadow: 0px 3px 3px #dbdbdb;
+    }
+    .default:hover {background: #aeaeae;}
+
+    .outline {
+        border: 2px solid #3d5afe;
+        background-color: white;
+        color: #3d5afe;
+        cursor: pointer; 
+    }
+    .outline:hover{
+        border: 2px solid #3d5afe;
+        background-color: #eaefff;
+        color: #3d5afe;
+    }
+
+    .text{
+        color: #3d5afe;
+        cursor: pointer; 
+    }
+    .text:hover{
+        color: #3d5afe;
+        background-color: #eaefff;
+    }
+
+    .disableShadow{
+        background-color: #3d5afe;
+        color: white;
+    }
+    .disableShadow:hover{
+        color: white;
+    }
+</style>
+<body>
+    <div class="container mt-5">
+        <h2>Buttons</h2>
+    </div>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-5">
+                <pre>&lt;Button /&gt;</pre>
+                <button class="btn default">Default</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-5">
+                <pre>&lt;Button variant="outline" /&gt;</pre>
+                <button class="btn outline">Default</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-5">
+                <pre>&lt;Button variant="text" /&gt;</pre>
+                <button class="btn text">Default</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-5">
+                <pre>&lt;Button disableShadow /&gt;</pre>
+                <button class="btn disableShadow">Default</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
