@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Buttons</title>
+</head>
+<style>
+
+
+.default {
+    background-color: #e0e0e0;
+    color: black;
+    box-shadow: 0px 3px 3px #dbdbdb;
+}
+.default:hover {background: #aeaeae;}
+
+.default:focus {background: #aeaeae;}
+
+.outline {
+    border: 2px solid #3d5afe;
+    background-color: white;
+    color: #3d5afe;
+    cursor: pointer; 
+}
+.outline:hover{
+    border: 2px solid #3d5afe;
+    background-color: #eaefff;
+    color: #3d5afe;
+}
+
+.outline:focus {
+    background-color: #eaefff;
+}
+
+.text{
+    color: #3d5afe;
+    cursor: pointer; 
+}
+.text:hover{
+    color: #3d5afe;
+    background-color: #eaefff;
+}
+
+.text:focus{
+    background-color: #eaefff;
+}
+
+
+.disableShadow{
+    background-color: #3d5afe;
+    color: white;
+}
+.disableShadow:hover{
+    color: white;
+}
+
+.disableShadow:focus {
+    color: white;
+}
+
+.disabled {
+    background-color: rgb(201, 201, 201);
+}
+
+.startIcon,.endIcon {
+    background-color: #2962FF;
+    text-align: center;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+.cDefault {
+    color:black;
+    background-color: #E0E0E0;
+
+}
+
+.cDefault:hover,.cDefault:focus {
+    color: black;
+    background-color: #AEAEAE;
+}
+
+.cPrimary {
+    color: white;
+    background-color: #2962FF;
+;
+}
+
+.cPrimary:hover,.cPrimary:focus {
+    color: white;
+    background-color: #0039CB;
+
+}
+
+.cSecondary {
+    color: white;
+    background-color: #455A64;
+
+}   
+
+.cSecondary:hover,.cSecondary:focus {
+    color: white;
+    background-color: #1C313A;
+}
+
+.cDanger {
+    color: white;
+    background-color: #D32F2F;
+}
+
+.cDanger:hover,.cDanger:focus  {
+    color: white;
+    background-color: #9A0007;
+}
+
+
+
+</style>
+<body>
+    <div class="container mt-5">
+        <h2>Buttons</h2>
+    </div>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-5">
+                <pre>&lt;Button /&gt;</pre>
+                <button class="btn default">Default</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-5">
+                <pre>&lt;Button variant="outline" /&gt;</pre>
+                <button class="btn outline">Default</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-5">
+                <pre>&lt;Button variant="text" /&gt;</pre>
+                <button class="btn text">Default</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-5">
+                <pre>&lt;Button disableShadow /&gt;</pre>
+                <button class="btn disableShadow">Default</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-5">
+                <pre>&lt;Button disabled /&gt;</pre>
+                <button class="btn disabled" disabled="true">Disabled</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-5">
+                <pre>&lt;Button variant ="text" disabled /&gt;</pre>
+                <button class="btn textDisabled" disabled="true">Disabled</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-5">
+                <pre>&lt;Button startIcon="local_grocery_store"/&gt;</pre>
+                <button class="btn startIcon"><span class="material-icons">add_shopping_cart</span> Default</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-5">
+                <pre>&lt;Button endIcon="local_grocery_store"/&gt;</pre>
+                <button class="btn endIcon">Default <span class="material-icons">add_shopping_cart</span></button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-3">
+                <pre>&lt;Button size="sm"/&gt;</pre>
+                <button class="btn btn-primary btn-sm">Default</button>
+            </div>
+
+            <div class="col-3">
+                <pre>&lt;Button size="md"/&gt;</pre>
+                <button class="btn btn-primary">Default</button>
+            </div>
+
+            <div class="col-3">
+                <pre>&lt;Button size="lg"/&gt;</pre>
+                <button class="btn btn-primary btn-lg">Default</button>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-3">
+                <pre>&lt;Button color="default"/&gt;</pre>
+                <button class="btn cDefault">Default</button>
+            </div>
+    
+            <div class="col-3">
+                <pre>&lt;Button color="primary"/&gt;</pre>
+                <button class="btn cPrimary">Default</button>
+            </div>
+        
+
+            <div class="col-3">
+                <pre>&lt;Button color="secondary"/&gt;</pre>
+                <button class="btn cSecondary">Secondary</button>
+            </div>
+        
+
+            <div class="col-3">
+                <pre>&lt;Button color="danger"/&gt;</pre>
+                <button class="btn cDanger">Danger</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
